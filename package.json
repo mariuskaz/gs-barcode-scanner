@@ -1,0 +1,11 @@
+{
+  "name": "gs-barcode-scanner",
+  "version": "1.0.0",
+  "description": "Scan barcode to google spreadsheet.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marius K.",
+  "license": "ISC"
+}
