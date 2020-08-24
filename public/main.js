@@ -153,7 +153,7 @@ Quagga.onDetected( result => {
     .show('popup')
     .update({
         item: scanner.lastResult,
-        input: ''
+        qty: ''
     })
 
     setTimeout(() => { 
