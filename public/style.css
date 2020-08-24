@@ -60,6 +60,9 @@ select {
   outline:none;
 }
 
+#sheets {
+  display:none;
+}
 
 .full-screen {
   position:absolute;
