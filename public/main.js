@@ -57,7 +57,7 @@ view = {
     
     submit() {
         let item = this.get('item').value,
-        qty = this.get('input').value,
+        qty = this.get('qty').value,
         image = Quagga.canvas.dom.image,
         result = document.createElement('div')
         result.setAttribute('class','thumbnail')
