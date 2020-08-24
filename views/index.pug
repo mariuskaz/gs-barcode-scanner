@@ -3,9 +3,9 @@ html
     head
         title gs-barcode-scanner
         meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no')
-        link(rel='stylesheet', type='text/css' href='style.css')
+        link(rel='stylesheet' type='text/css' href='style.css')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.js')
-        script( async defer src='https://apis.google.com/js/api.js', onload='connect()', onreadystatechange='if (this.readyState === "complete") onload()')
+        script(async defer src='https://apis.google.com/js/api.js' onload='connect()' onreadystatechange='if (this.readyState === "complete") onload()')
     body   
         #scanner
             #scanline
@@ -18,9 +18,9 @@ html
           br
           select#sheets
           h3 STOCK
-          input#item(type='text', placeholder='barkodas')
+          input#item(type='text' placeholder='item')
           br
-          input#qty(type='number', onkeyup='view.accept(event)', placeholder='kiekis')
+          input#qty(type='number' onkeyup='view.accept(event)' placeholder='qty')
           .footer
             button#back(onclick='view.back()') CANCEL
             button#submit(onclick='view.submit()' disabled) SUBMIT
