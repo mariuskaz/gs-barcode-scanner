@@ -1,0 +1,34 @@
+{
+    "dir": "ltr",
+    "lang": "it",
+    "name": "gs-barcode-scanner",
+    "short_name": "GS scanner",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://gs-barcode-scanner.herokuapp.com/",
+    "background_color": "transparent",
+    "theme_color": "transparent",
+    "description": "Scan barcode to google spreadsheet",
+    "orientation": "portrait",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/icon-48x48",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-96x96",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-72x72",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ],
+    "url": "https://gs-barcode-scanner.herokuapp.com",
+    "screenshots": []
+}
