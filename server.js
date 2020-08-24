@@ -1,6 +1,6 @@
 const express = require('express'),
 app = express(),
-port = 5000
+port = process.env.PORT  || 5000
 
 app.set('views', './views')
 app.set('view engine', 'pug')
