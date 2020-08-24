@@ -157,7 +157,7 @@ Quagga.onDetected( result => {
     })
 
     setTimeout(() => { 
-        view.get('input').focus() 
+        view.get('qty').focus() 
     }, 500)
 
     history.pushState(null, null)
