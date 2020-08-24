@@ -2,6 +2,7 @@ doctype html
 html
     head
         title gs-barkode-scanner
+        meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no')
         link(rel='stylesheet', type='text/css' href='style.css')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.js')
         script( async defer src='https://apis.google.com/js/api.js', onload='connect()', onreadystatechange='if (this.readyState === "complete") onload()')
@@ -14,6 +15,7 @@ html
         #popup.full-screen
           h3 SPREADSHEET
           select#spreadsheets(onchange='getSheets()')
+          br
           select#sheets(style='display:none')
           h3 STOCK
           input#item(type='text', placeholder='barkodas')
