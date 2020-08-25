@@ -1,8 +1,8 @@
 {
     "dir": "ltr",
     "lang": "lt",
-    "name": "gs-barcode-scanner",
-    "short_name": "GS barcode",
+    "name": "GS scanner",
+    "short_name": "GS scanner",
     "scope": "/",
     "display": "standalone",
     "start_url": "https://gs-barcode-scanner.herokuapp.com/",
