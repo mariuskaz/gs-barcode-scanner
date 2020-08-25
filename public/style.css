@@ -1,4 +1,5 @@
 body {
+  background: lightgray;
   margin:0;
   padding:0;
   overflow:hidden;
@@ -39,6 +40,21 @@ select {
   border-bottom:1px solid #22aadd;
   outline:none;
   font-size:12pt;
+}
+
+#app {
+  background: white;
+  height: 100vh;
+  max-height: 660px;
+  max-width: 400px;
+  margin:auto;
+  border: 2px solid #606060;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+#scanner {
+  overflow:hidden;
 }
 
 #popup {
@@ -198,6 +214,7 @@ canvas.drawing, canvas.drawingBuffer {
     display:block;
     height:3px;
     width:50%;
+    max-width: 300px;
     top:30%;
     left:0;right:0;
     margin:auto;

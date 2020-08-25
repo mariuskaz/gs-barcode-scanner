@@ -36,6 +36,10 @@ getSpreadSheets = function (signed) {
 
 	if (signed) {
 
+		let user = gapi.auth2.getAuthInstance().currentUser.get(),
+		name = user.getBasicProfile().getName()
+		view.update({ info: 'Welcome ' + name + '!' })
+
 		gapi.client.drive.files.list({
 			'q': 'mimeType="application/vnd.google-apps.spreadsheet"',
 			'pageSize': 100,

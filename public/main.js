@@ -63,6 +63,7 @@ view = {
         result.setAttribute('class','thumbnail')
         result.innerHTML = "<img src='"+image.toDataURL()+"'/><h3>"+item+": "+qty+"</h3>"
         this.get('results').prepend(result)
+        this.update({ info: 'RESULTS' })
 
         let params = {
             spreadsheetId: this.get('spreadsheets').value, 
@@ -78,7 +79,7 @@ view = {
         gapi.client.sheets.spreadsheets.values
         .append(params, valueRangeBody)
         .then( response => {
-            console.log('Update status:', response.status)
+            console.log('Append new row:.....done.')
         }, reason => {
             alert('Error: ' + reason.result.error.message)
         })
