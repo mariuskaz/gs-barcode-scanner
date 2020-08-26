@@ -45,11 +45,6 @@ select {
 #app {
   background: white;
   height: 100vh;
-  max-height: 660px;
-  max-width: 400px;
-  margin:auto;
-  border: 2px solid #606060;
-  border-radius:20px;
   overflow:hidden;
 }
 
@@ -219,4 +214,13 @@ canvas.drawing, canvas.drawingBuffer {
     left:0;right:0;
     margin:auto;
     z-index:9999;
+}
+
+@media (min-width: 768px) { 
+  #app {
+    border: 2px solid #606060;
+    border-radius:20px;
+    max-width: calc(100vh / 1.9);
+    margin:auto;
+  }
 }
