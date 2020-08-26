@@ -48,6 +48,19 @@ select {
   overflow:hidden;
 }
 
+#title {
+  font-family:calibri,serif;
+  font-size:14pt;
+  font-weight:bold;
+  height:45px;
+  line-height:45px;
+  width:100%;
+  color:gray;
+  text-align:center;
+  z-index:0;
+  overflow:hidden;
+}
+
 #scanner {
   overflow:hidden;
 }
@@ -81,19 +94,6 @@ select {
   width:100vw;
   padding:20px 10px 10px 20px;
   background-color:white;
-}
-
-.title {
-  font-family:calibri,serif;
-  font-size:14pt;
-  font-weight:bold;
-  height:45px;
-  line-height:45px;
-  width:100%;
-  color:gray;
-  text-align:center;
-  z-index:0;
-  overflow:hidden;
 }
 
 .thumbnail {

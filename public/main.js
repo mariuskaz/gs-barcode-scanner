@@ -63,11 +63,15 @@ view = {
         result.setAttribute('class','thumbnail')
         result.innerHTML = "<img src='"+image.toDataURL()+"'/><h3>"+item+": "+qty+"</h3>"
         this.get('results').prepend(result)
-        this.update({ info: 'RESULTS' })
+
+        let file =  this.get('spreadsheets').selectedOptions[0].text,
+        sheet = this.get('sheets').selectedOptions[0].text,
+        title = file + ' [' + sheet + ']'
+        this.update({ title })
 
         let params = {
             spreadsheetId: this.get('spreadsheets').value, 
-            range: this.get('sheets').selectedOptions[0].text + '!A:C',
+            range: sheet + '!A:C',
             valueInputOption: 'RAW',  
             insertDataOption: 'INSERT_ROWS', 
         },

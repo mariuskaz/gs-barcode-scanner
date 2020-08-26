@@ -38,7 +38,7 @@ getSpreadSheets = function (signed) {
 
 		let user = gapi.auth2.getAuthInstance().currentUser.get(),
 		name = user.getBasicProfile().getName()
-		view.update({ info: 'Welcome ' + name + '!' })
+		view.update({ title: 'Welcome ' + name + '!' })
 
 		gapi.client.drive.files.list({
 			'q': 'mimeType="application/vnd.google-apps.spreadsheet"',
@@ -46,6 +46,7 @@ getSpreadSheets = function (signed) {
 			'fields': 'nextPageToken, files(id, name)'
 
 		}).then(response => {
+			console.log(response)
 			let files = response.result.files
 			console.log('Spreadsheets on Drive: ' + files.length)
 			state.spreadsheets = []
