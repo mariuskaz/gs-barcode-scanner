@@ -46,9 +46,8 @@ getSpreadSheets = function (signed) {
 			'fields': 'nextPageToken, files(id, name)'
 
 		}).then(response => {
-			console.log(response)
 			let files = response.result.files
-			console.log('Spreadsheets on Drive: ' + files.length)
+			console.log('Spreadsheets on drive: ' + files.length)
 			state.spreadsheets = []
 			state.spreadsheets.push({ id: 'none', name: 'Choose spreadsheet' })
 			if (files && files.length > 0) {
