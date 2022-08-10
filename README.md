@@ -4,7 +4,6 @@ PWA for scanning barcodes into google spreadsheet. Based on [QuaggaJS](https://g
 
 <img src="https://mariuskaz.github.io/images/scanner.png" />
 
-
 ## Build Setup
 
 ``` bash
